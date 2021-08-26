@@ -5,7 +5,7 @@ import './SushiSwap.sol';
 import './UniSwap.sol';
 
 
-contract Multiswap is 
+contract Multiswap {
 
 constructor() {
   IERC20(BNT).safeApprove(address(sushiRouter), type(uint256).max);
@@ -34,4 +34,5 @@ function multiSwapPreview() external payable returns(uint256) {
     
     uint256 daiBalanceUserAfterTrade = IERC20(DAI).balanceOf(msg.sender);
     return daiBalanceUserAfterTrade - daiBalanceUserBeforeTrade;
+}
 }
