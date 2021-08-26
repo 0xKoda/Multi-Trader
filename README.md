@@ -1,6 +1,10 @@
-# Basic Sample Hardhat Project
+# Hardhat Project - MultiSwap
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This project was designed using hardhat to execute a Multiswap trade accross Bancor, Sushi & UniSwap. This contract demonstrates a use case for arbitrage accross DEX's.
+Logic for platform specific access points are stored in their respective contracts (BancorSwap.sol).
+MultSwap.sol contains the main logic for the single transaction call, inheriting from the contracts created above. 
+
+**This is a work in progress**
 
 Try running some of the following tasks:
 
